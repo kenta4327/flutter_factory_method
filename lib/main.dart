@@ -40,6 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
 
+    // FileTextUtilCreatorのcreateメソッドを呼び出しているだけで、
+    // 扱う対象がファイルじゃなくなったとしても対象クラスを変更するだけで、作成手順については触れなくて良い
     final textUtilCreator = FileTextUtilCreator();
     _textUtil = textUtilCreator.create();
   }
